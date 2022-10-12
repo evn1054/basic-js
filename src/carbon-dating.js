@@ -17,9 +17,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 
- const MODERN_ACTIVITY = 15;
- const HALF_LIFE_PERIOD = 5730;
- let parseFloatSampleActivity = 0;
+const MODERN_ACTIVITY = 15;
+const HALF_LIFE_PERIOD = 5730;
+let parseFloatSampleActivity = 0;
 
 function dateSample(sampleActivity) {
   if (typeof(sampleActivity) == 'string') {
@@ -37,7 +37,6 @@ function dateSample(sampleActivity) {
 
 }
 
-// dateSample(3);
 module.exports = {
   dateSample
 };
