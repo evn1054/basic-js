@@ -14,6 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
  function createDreamTeam(members) {
+  if (Array.isArray(members) == false) return false;
   let tempArr = [];
   members.forEach(item => {
     if ( (typeof(item) == 'string') && (item) && (isNaN(parseFloat(item.split('')[0]))) ) {
